@@ -11,5 +11,6 @@ stdin.on('data', (data) => {
 });
 process.on('SIGINT', endFunc);
 function endFunc() {
+  process.stdout.write("\n Goodbye \n")
   exit();
 }
