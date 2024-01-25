@@ -9,7 +9,7 @@ stdin.on('data', (data) => {
   }
   writeStream.write(data);
 });
-process.on('SIGINT', endFunc());
+process.on('SIGINT', endFunc);
 function endFunc() {
   exit();
 }
